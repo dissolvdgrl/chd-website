@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>@yield('pageTitle') chilldsgn.com / Websites for all kinds of people & small businesses</title>
+
+        <!-- Fonts -->
+        <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+        <link rel="stylesheet" href="https://use.typekit.net/yvx7xbn.css">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}" >
+    </head>
+    <body>
+        <div id="app">
+            <nav>
+                <a href="/" class="logo-link">
+                    <img src="{{ asset('storage/images/logo.svg') }}" alt="logo" class="logo">
+                </a>
+                <span class="long-line"></span>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/work" class="nav-link">Work</a>
+                <a href="/contact" class="nav-link">Contact</a>
+                <span class="short-line"></span>
+                <a href="https://www.linkedin.com/in/christie-hill/" class="nav-icon" target="_blank">
+                    <img src="{{ asset('storage/images/linkedin-icon.svg') }}" alt="LinkedIn icon">
+                </a>
+                <a href="https://www.instagram.com/chilldsgn_dev/" class="nav-icon" target="_blank">
+                    <img src="{{ asset('storage/images/instagram-icon.svg') }}" alt="Instagram icon">
+                </a>
+                <a href="https://github.com/dissolvdgrl" class="nav-icon" target="_blank">
+                    <img src="{{ asset('storage/images/github-icon.svg') }}" alt="Github icon">
+                </a>            
+            </nav>
+            <div id="main-content">
+                @yield('content')
+            </div>                    
+        </div>
+
+        <footer>
+            <p>some footer shit</p>
+        </footer>
+        <script src="{{ asset('js/app.js') }}"></script>
+    </body>
+</html>
+<!-- <a href="https://www.freepik.com/free-photos-vectors/background">Background psd created by zlatko_plamenov - www.freepik.com</a> -->
