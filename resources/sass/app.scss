@@ -1,8 +1,129 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// Reset
+        /* Box sizing rules */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        /* Remove default padding */
+        ul, ol {
+            padding: 0;
+        }
+
+        /* Remove default margin */
+        body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+            margin: 0;
+        }
+
+        /* Set core body defaults */
+        body {
+            min-height: 100vh;
+            scroll-behavior: smooth;
+            text-rendering: optimizeSpeed;
+            line-height: 1.5;
+        }
+
+        /* Remove list styles on ul, ol elements with a class attribute */
+        ul[class], ol[class] {
+            list-style: none;
+        }
+
+        /* A elements that don't have a class get default styles */
+        a:not([class]) {
+            text-decoration-skip-ink: auto;
+        }
+
+        /* Make images easier to work with */
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Natural flow and rhythm in articles by default */
+        article > * + * {
+            margin-top: 1em;
+        }
+
+        /* Inherit fonts for inputs and buttons */
+        input, button, textarea, select {
+            font: inherit;
+        }
+
+// Base
+        html {
+            background: url('storage/images/bg.jpg') no-repeat top center;
+            background-size: 100%;
+            font-size: 16px;
+            font-family: $body;
+        }
+
+// Typograhy
+        h1 {
+            font-family: $headings;
+        }
+
+        p {
+            font-family: $body;
+        }
+
+// App
+        #app {
+            display: flex;
+        }
+
+        #main-content {
+            max-width: 960px;
+            width: 100%;
+        }
+
+// Nav
+        nav {
+            position: sticky;
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4rem 0;
+
+            .logo-link {
+                width: 107px;
+            }
+
+            .long-line {
+                display: block;
+                background-color: black;
+                width: 1px;
+                height: 120px;
+                margin: 10px 0;
+            }
+
+            .short-line {
+                display: block;
+                background-color: black;
+                width: 1px;
+                height: 46px;
+                margin: 10px 0;
+            }
+
+            .nav-link {
+                text-transform: uppercase;
+                color: black;
+                text-decoration: none;
+                letter-spacing: 0rem;
+                transition: 0.2s ease all;
+                margin: 0.25rem 0;
+            }
+
+            .nav-link:hover, .nav-link:focus {
+                letter-spacing: 0.1rem;
+            }
+
+            .nav-icon {
+                width: 18px;
+                height: 18px;
+                margin: 0.25rem;
+            }
+        }
