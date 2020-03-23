@@ -36,12 +36,16 @@
             </nav>
             <div id="main-content">
                 @yield('content')
-            </div>                    
-        </div>
+            </div>   
 
-        <footer>
-            <p>some footer shit</p>
-        </footer>
+            <footer>
+                <p>/end</p>
+                <span class="horizontal-line"></span>
+                <p class="colophon">Colophon</p>
+                <p>Built using <a href="https://laravel.com/" class="link" target="_blank">Laravel</a>, <a href="https://vuejs.org/" class="link" target="_blank">Vuejs</a> and plenty of coffee. Running on Linode.</p>
+                <p>I <span class="emphasis">do not track</span> your interactions with this website.</p>
+            </footer>                 
+        </div>
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>

@@ -4,11 +4,13 @@
 
 @section('content')
     <section class="header">
+        <div>
         <p class="header-small">Hey, I'm Christie and I make</p>
-        <h1 class="main-heading">websites for small businesses and individuals</h1>
+        <h1 class="main-heading">websites for <br>small businesses <br>and individuals</h1>
+        </div>
         <div class="header-links">
             <a href="#" class="button">I need a website!</a>
-            <a href="/work">or check out my work</a>
+            <a href="/work" class="link">or check out my work</a>
         </div>
     </section>
 
@@ -35,7 +37,7 @@
         <h1 class="body-heading">About</h1>
         <p>I am a South African web developer and designer currently working at a psychometrics company in Johannesburg and studying towards a Bachelor of Science in Computing degree.</p>
         <p>I love being able to simultaneously apply what I learn during work hours!</p>
-        <p>My main goal while roaming the planet is to learn and grow as an individual and with tech, I can achieve that. I am an INTJ, which means that I'm curious, creative and always finding ways to optimise and improve.</p>
+        <p>My main goal while roaming the planet is to learn and grow as an individual and due to tech's ever-changing scenery, I can achieve that. I am an <a href="https://www.mbtionline.com/en-US/MBTI-Types/INTJ" target="_blank" class="link">INTJ</a>, which means that I'm curious, creative and always finding ways to optimise and improve.</p>
         <p>Please get in touch with me if you'd like to work with me or just say hi :)</p>
         <a href="#" class="button chat">c@chilldsgn.com</a>
     </section>
