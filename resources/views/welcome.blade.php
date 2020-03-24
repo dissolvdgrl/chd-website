@@ -10,7 +10,7 @@
         </div>
         <div class="header-links">
             <a href="#" class="button">I need a website!</a>
-            <a href="/work" class="link">or check out my work</a>
+            <a href="/projects" class="link">or check out my work</a>
         </div>
     </section>
 
@@ -33,7 +33,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section id="about">
         <h1 class="body-heading">About</h1>
         <p>I am a South African web developer and designer currently working at a psychometrics company in Johannesburg and studying towards a Bachelor of Science in Computing degree.</p>
         <p>I love being able to simultaneously apply what I learn during work hours!</p>

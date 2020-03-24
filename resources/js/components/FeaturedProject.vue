@@ -4,7 +4,7 @@
         <p class="featured-project-title">Project title</p>
         <p class="project-tools">['html5', 'scss', 'php', 'vuejs']</p>
         <a href="#" class="link">View project</a>
-        <a href="#" class="button">Show me more projects</a>
+        <a href="/projects" class="button">Show me more projects</a>
     </div>
 </template>
 

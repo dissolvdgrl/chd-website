@@ -1278,7 +1278,7 @@ var staticRenderFns = [
         _vm._v("View project")
       ]),
       _vm._v(" "),
-      _c("a", { staticClass: "button", attrs: { href: "#" } }, [
+      _c("a", { staticClass: "button", attrs: { href: "/projects" } }, [
         _vm._v("Show me more projects")
       ])
     ])

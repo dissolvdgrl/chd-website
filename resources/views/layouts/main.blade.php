@@ -20,8 +20,8 @@
                     <img src="{{ asset('storage/images/logo.svg') }}" alt="logo" class="logo">
                 </a>
                 <span class="long-line"></span>
-                <a href="/about" class="nav-link">About</a>
-                <a href="/work" class="nav-link">Work</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="/projects" class="nav-link">Projects</a>
                 <a href="/contact" class="nav-link">Contact</a>
                 <span class="short-line"></span>
                 <a href="https://www.linkedin.com/in/christie-hill/" class="nav-icon" target="_blank">

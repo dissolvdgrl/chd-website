@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Models\Post as Post;
+use App\Project as Project;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,11 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+});
+
+Route::get('projects', function() {
+    $projects = Project::select('title', 'tools', );
+    return view('projects', compact('projects'));
 });
 
 Route::get('posts', function() {
