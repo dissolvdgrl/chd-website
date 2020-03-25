@@ -9,10 +9,12 @@
         <h1 class="main-heading">websites for <br>small businesses <br>and individuals</h1>
         </div>
         <div class="header-links">
-            <a href="#" class="button">I need a website!</a>
+            <span id="show-modal" @click="showModal = true" class="button">I need a website!</span>
             <a href="/projects" class="link">or check out my work</a>
         </div>
     </section>
+
+    <modal v-if="showModal" @close="showModal = false"></modal>
 
     <section class="service-intro">
         <div class="left">
@@ -29,7 +31,11 @@
             <p class="subtext">Or at least one of these checkmarks :)</p>
         </div>
         <div class="right">
-            <featured-project></featured-project>
+            <img src="" alt="project title thumbnail">
+            <p class="featured-project-title">{{ $featuredProject->title }}</p>
+            <p class="project-tools">{{ $featuredProject->tools }}</p>
+            <a href="/projects/{{ $featuredProject->slug }}" class="link">View project</a>
+            <a href="/projects" class="button">Show me more projects</a>
         </div>
     </section>
 
@@ -38,7 +44,7 @@
         <p>I am a South African web developer and designer currently working at a psychometrics company in Johannesburg and studying towards a Bachelor of Science in Computing degree.</p>
         <p>I love being able to simultaneously apply what I learn during work hours!</p>
         <p>My main goal while roaming the planet is to learn and grow as an individual and due to tech's ever-changing scenery, I can achieve that. I am an <a href="https://www.mbtionline.com/en-US/MBTI-Types/INTJ" target="_blank" class="link">INTJ</a>, which means that I'm curious, creative and always finding ways to optimise and improve.</p>
-        <p>Please get in touch with me if you'd like to work with me or just say hi :)</p>
-        <a href="#" class="button chat">c@chilldsgn.com</a>
+        <p>Please get in touch with me if you'd like to work with me or just say hi.</p>
+        <p>The best way to get in contact with me is to send me an email. My address is the first letter of my name + this website. If you can't do the math, then you are probably not qualified to use a computer :)</p> 
     </section>
 @endsection

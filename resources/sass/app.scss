@@ -132,6 +132,7 @@
             font-size: 14px;
             color: white;
             text-decoration: none;
+            cursor: pointer;
         }
 
         .button::after {
@@ -209,6 +210,29 @@
                 height: 18px;
                 margin: 0.25rem;
             }
+        }
+
+// Featured Project
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            img {
+                width: 320px;
+                height: 165px;
+                background-color: black;
+            }
+
+            .button {
+                margin-top: 1rem;
+            }
+        }
+
+        .featured-project-title {
+            font-family: $headings;
+            font-size: 2rem;
+            margin: 0;
         }
 
 // Footer

@@ -156,6 +156,7 @@ p {
   font-size: 14px;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button::after {
@@ -234,6 +235,28 @@ nav .nav-icon {
   width: 18px;
   height: 18px;
   margin: 0.25rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right img {
+  width: 320px;
+  height: 165px;
+  background-color: black;
+}
+
+.right .button {
+  margin-top: 1rem;
+}
+
+.featured-project-title {
+  font-family: urw-din, sans-serif;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .horizontal-line {

@@ -22,6 +22,7 @@
                 <span class="long-line"></span>
                 <a href="#about" class="nav-link">About</a>
                 <a href="/projects" class="nav-link">Projects</a>
+                <a href="/articles" class="nav-link">Articles</a>
                 <a href="/contact" class="nav-link">Contact</a>
                 <span class="short-line"></span>
                 <a href="https://www.linkedin.com/in/christie-hill/" class="nav-icon" target="_blank">
