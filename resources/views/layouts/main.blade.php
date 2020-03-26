@@ -20,7 +20,7 @@
                     <img src="{{ asset('storage/images/logo.svg') }}" alt="logo" class="logo">
                 </a>
                 <span class="long-line"></span>
-                <a href="#about" class="nav-link">About</a>
+                <a href="/#about" class="nav-link">About</a>
                 <a href="/projects" class="nav-link">Projects</a>
                 <a href="/articles" class="nav-link">Articles</a>
                 <a href="/contact" class="nav-link">Contact</a>

@@ -27,7 +27,7 @@
                 <li>Technical consultations & migrations</li>
                 <li>Content Management Systems</li>
             </ul>
-            <a href="#" class="button">Yes, I need this!</a>
+            <span class="button" @click="showModal = true">Yes, I need this!</span>
             <p class="subtext">Or at least one of these checkmarks :)</p>
         </div>
         <div class="right">

@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('pageTitle', $article->title)
+@section('pageTitle', $article->title . ' / ')
 
 @section('content')
 <div>

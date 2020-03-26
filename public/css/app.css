@@ -141,6 +141,10 @@ p {
   margin-bottom: 4rem;
 }
 
+.header-small {
+  margin-bottom: 0;
+}
+
 .header-links {
   margin: 4rem 0;
 }
@@ -163,6 +167,14 @@ p {
   content: "\279E";
   margin-left: 0.5rem;
   transition: 0.2s ease all;
+}
+
+.button:hover {
+  padding-right: 1rem;
+}
+
+.button:hover ::after {
+  margin-left: 1rem;
 }
 
 .button:hover::after {
@@ -257,6 +269,26 @@ nav .nav-icon {
   font-family: urw-din, sans-serif;
   font-size: 2rem;
   margin: 0;
+}
+
+#filmstrip {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-thumbnail {
+  width: 12.5%;
+  height: 50px;
+  transition: 0.2s ease all;
+  cursor: pointer;
+}
+
+.project-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.black {
+  background-color: black;
 }
 
 .horizontal-line {
