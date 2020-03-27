@@ -265,6 +265,15 @@
             background-color: black;
         }
 
+        .active-project {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                max-width: 480px;
+            }
+        }
+
 // Footer
         .horizontal-line {
             display: block;

@@ -31,10 +31,13 @@
 <section id="project-container">
     @foreach($projects as $project)
         <div class="active-project">
-            <h1>{{ $project->title }}</h1>
-            <p>{{ $project->description }}</p>
-            <p>{{ $project->tools }}</p>
-            <a href="/projects/{{ $project->slug }}">View project</a>
+            <div class="project-info">
+                <h1>{{ $project->title }}</h1>
+                <p>{{ $project->tools }}</p>
+                <p>{{ $project->description }}</p>
+                <a href="{{ $project->url }}" target="_blank" class="button">Visit site</a>
+            </div>
+        <img src="/storage/{{ $project->image }} " alt="An image displaying {{ $project->title }}">
         </div>
     @endforeach
 </section>
