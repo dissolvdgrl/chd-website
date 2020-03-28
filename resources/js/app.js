@@ -1,4 +1,5 @@
 import Modal from './components/Modal';
+import Projects from './components/Projects';
 import Project from './components/Project';
 window.Vue = require('vue');
 
@@ -23,7 +24,7 @@ files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(
 
 const app = new Vue({
     el: '#app',
-    components: { Modal, Project },
+    components: { Modal, Projects, Project },
     data: {
         showModal: false
     }

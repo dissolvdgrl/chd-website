@@ -259,6 +259,8 @@ nav .nav-icon {
   width: 320px;
   height: 165px;
   background-color: black;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
 }
 
 .right .button {
@@ -284,6 +286,7 @@ nav .nav-icon {
 }
 
 .project-thumbnail:hover {
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09);
   transform: scale(1.05);
 }
 
@@ -291,13 +294,37 @@ nav .nav-icon {
   background-color: black;
 }
 
+.project-info {
+  width: 45%;
+}
+
 .active-project {
   display: flex;
   justify-content: space-between;
+  margin-top: 10rem;
 }
 
 .active-project img {
-  max-width: 480px;
+  width: 480px;
+  height: 260px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09), 0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09), 0 32px 16px rgba(0, 0, 0, 0.09);
+}
+
+.article-meta {
+  margin-bottom: 10rem;
+}
+
+.article-excerpt {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.article-box {
+  margin-bottom: 5rem;
+}
+
+.article-box h1 {
+  margin-bottom: 0;
 }
 
 .horizontal-line {

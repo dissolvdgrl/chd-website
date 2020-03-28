@@ -31,7 +31,8 @@
             <p class="subtext">Or at least one of these checkmarks :)</p>
         </div>
         <div class="right">
-            <img src="" alt="project title thumbnail">
+            <p class="subtext">Featured project_</p>
+            <img src="/storage/{{ $featuredProject->image }}" alt="project title thumbnail">
             <p class="featured-project-title">{{ $featuredProject->title }}</p>
             <p class="project-tools">{{ $featuredProject->tools }}</p>
             <a href="/projects/{{ $featuredProject->slug }}" class="link">View project</a>

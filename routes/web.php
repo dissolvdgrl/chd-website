@@ -16,12 +16,12 @@ use TCG\Voyager\Models\Post as Article;
 */
 
 Route::get('/', function () {
-    $featuredProject = Project::select('title', 'tools', 'slug', 'image')->first();
+    $featuredProject = Project::select('title', 'tools', 'slug', 'image')->where('featured', '=', 1)->first();
     return view('welcome', compact('featuredProject'));
 });
 
 Route::get('projects', function() {
-    $projects = Project::select('title', 'tools', 'created_at', 'description', 'slug', 'image')->get();
+    $projects = Project::select('title', 'tools', 'created_at', 'description', 'slug', 'image', 'url')->get();
     return view('projects.index', compact('projects'));
 });
 

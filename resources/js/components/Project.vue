@@ -1,11 +1,21 @@
 <template>
-    <div id="project-container">
-        <h1>Project title</h1>
+    <div role="tabpanel" v-show="isActive">
+        <slot></slot>
     </div>
 </template>
 
 <script>
     export default {
+        props: {
+            title: {},
+            image: {},
+            active: { type: Boolean, default: false }
+        },
 
+        data() {
+            return {
+                isActive: this.active
+            }
+        }
     }
 </script>
