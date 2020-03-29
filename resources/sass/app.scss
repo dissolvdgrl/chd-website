@@ -51,6 +51,10 @@
             font: inherit;
         }
 
+        button {
+            border: none;
+        }
+
 // Base
         html {
             background: url('storage/images/bg.jpg') no-repeat top center;
@@ -165,6 +169,18 @@
             text-decoration-thickness: 6px;
         }
 
+        .go-back {
+            text-decoration: none;
+        }
+
+        .go-back::before {
+            display: inline-block;
+            content: '\279E';
+            margin-right: 0.5rem;
+            transform: rotate(180deg);
+            transition: 0.2s ease all;
+        }
+
         section {
             margin-bottom: 4rem;
         }
@@ -208,6 +224,7 @@
                 letter-spacing: 0rem;
                 transition: 0.2s ease all;
                 margin: 0.25rem 0;
+                cursor: pointer;
             }
 
             .nav-link:hover, .nav-link:focus {
@@ -312,6 +329,19 @@
             }
         }
 
+        .article-body {
+            a {
+                color: black;
+                transition: 0.2s ease all;
+                text-decoration: solid underline black 2px;
+                text-underline-position: under;
+            }
+    
+            a:hover {
+                text-decoration-thickness: 6px;
+            }
+        }
+
 // Footer
         .horizontal-line {
             display: block;
@@ -345,4 +375,73 @@
             font-family: $headings;
         }
 
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 720px) {
+    #app {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav {
+        width: 90%;
+        align-self: center;
+        justify-content: cernter;
+        margin-bottom: 3rem;
+    }
+
+    .logo {
+        margin-bottom: 2rem;
+    }
+
+    .long-line, .short-line {
+        display: none !important;
+    }
+
+    .header-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-content {
+        width: 90%;
+        align-self: center;
+    }
+
+    .service-intro {
+        flex-direction: column;
+    }
+
+    .modal-mask {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+    }
+
+    .modal-container {
+        max-width: none !important;
+        width: 100vw !important;
+        display: flex;
+        flex-direction: column;
+        margin: 0 !important;
+    }
+
+    .active-project {
+        flex-direction: column;
+
+        .project-info {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+    }
+
+    footer {
+        width: 90%;
+        align-self: center;
+        margin-left: 0;
+        max-width: none;
+    }
+}
 // https://tobiasahlin.com/blog/layered-smooth-box-shadows/

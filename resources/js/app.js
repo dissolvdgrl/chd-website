@@ -1,7 +1,10 @@
+import axios from 'axios';
 import Modal from './components/Modal';
 import Projects from './components/Projects';
 import Project from './components/Project';
+
 window.Vue = require('vue');
+window.axios = axios;
 
 /**
  * The following block of code may be used to automatically register your

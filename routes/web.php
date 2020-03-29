@@ -40,6 +40,8 @@ Route::get('articles/{slug}', function($slug) {
     return view('articles.show', compact('article'));
 });
 
+Route::post('/message', 'FormController@message');
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

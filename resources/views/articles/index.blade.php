@@ -5,8 +5,8 @@
 @section('content')
     <section class="header">
         <div>
-            <p class="header-small">Mostly personal opinions</p>
             <h1 class="main-heading">Articles</h1>
+            <p class="header-small">Strong opinions, ramblings about code and other codswallop. Go away if you're easily offended :) </p>
         </div>
     </section>
     @foreach ($articles as $article)

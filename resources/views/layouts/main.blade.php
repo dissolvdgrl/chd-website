@@ -15,6 +15,7 @@
     </head>
     <body>
         <div id="app">
+            <modal v-if="showModal" @close="showModal = false"></modal>
             <nav>
                 <a href="/" class="logo-link">
                     <img src="{{ asset('storage/images/logo.svg') }}" alt="logo" class="logo">
@@ -22,7 +23,7 @@
                 <span class="long-line"></span>
                 <a href="/articles" class="nav-link">Articles</a>
                 <a href="/projects" class="nav-link">Projects</a>
-                <a href="/contact" class="nav-link">Contact</a>
+                <span class="nav-link" @click="showModal = true">Contact</span>
                 <span class="short-line"></span>
                 <a href="https://www.linkedin.com/in/christie-hill/" class="nav-icon" target="_blank">
                     <img src="{{ asset('storage/images/linkedin-icon.svg') }}" alt="LinkedIn icon">
@@ -49,4 +50,3 @@
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
-<!-- <a href="https://www.freepik.com/free-photos-vectors/background">Background psd created by zlatko_plamenov - www.freepik.com</a> -->

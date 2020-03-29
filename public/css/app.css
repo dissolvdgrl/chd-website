@@ -79,6 +79,10 @@ select {
   font: inherit;
 }
 
+button {
+  border: none;
+}
+
 html {
   background: url(/images/bg.jpg?d67f5a48175e30c4130147752e753548) no-repeat top center;
   background-size: 100%;
@@ -193,6 +197,18 @@ p {
   text-decoration-thickness: 6px;
 }
 
+.go-back {
+  text-decoration: none;
+}
+
+.go-back::before {
+  display: inline-block;
+  content: "\279E";
+  margin-right: 0.5rem;
+  transform: rotate(180deg);
+  transition: 0.2s ease all;
+}
+
 section {
   margin-bottom: 4rem;
 }
@@ -236,6 +252,7 @@ nav .nav-link {
   letter-spacing: 0rem;
   transition: 0.2s ease all;
   margin: 0.25rem 0;
+  cursor: pointer;
 }
 
 nav .nav-link:hover,
@@ -327,6 +344,18 @@ nav .nav-icon {
   margin-bottom: 0;
 }
 
+.article-body a {
+  color: black;
+  transition: 0.2s ease all;
+  -webkit-text-decoration: solid underline black 2px;
+          text-decoration: solid underline black 2px;
+  text-underline-position: under;
+}
+
+.article-body a:hover {
+  text-decoration-thickness: 6px;
+}
+
 .horizontal-line {
   display: block;
   width: 100%;
@@ -357,5 +386,72 @@ footer p:first-child {
   font-size: 1rem;
   text-align: right;
   font-family: urw-din, sans-serif;
+}
+
+@media (max-width: 720px) {
+  #app {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  nav {
+    width: 90%;
+    align-self: center;
+    justify-content: cernter;
+    margin-bottom: 3rem;
+  }
+
+  .logo {
+    margin-bottom: 2rem;
+  }
+
+  .long-line,
+  .short-line {
+    display: none !important;
+  }
+
+  .header-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main-content {
+    width: 90%;
+    align-self: center;
+  }
+
+  .service-intro {
+    flex-direction: column;
+  }
+
+  .modal-mask {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+  }
+
+  .modal-container {
+    max-width: none !important;
+    width: 100vw !important;
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+  }
+
+  .active-project {
+    flex-direction: column;
+  }
+
+  .active-project .project-info {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    width: 90%;
+    align-self: center;
+    margin-left: 0;
+    max-width: none;
+  }
 }
 

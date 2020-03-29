@@ -14,8 +14,6 @@
         </div>
     </section>
 
-    <modal v-if="showModal" @close="showModal = false"></modal>
-
     <section class="service-intro">
         <div class="left">
             <h1 class="body-heading">I'll help you with:</h1>
