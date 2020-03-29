@@ -12,7 +12,7 @@
             <span id="show-modal" @click="showModal = true" class="button">I need a website!</span>
             <a href="/projects" class="link">or check out my work</a>
         </div>
-    </section>
+    </section> 
 
     <section class="service-intro">
         <div class="left">
