@@ -15,14 +15,15 @@
     </head>
     <body>
         <div id="app">
+            <modal v-if="showModal" @close="showModal = false"></modal>
             <nav>
                 <a href="/" class="logo-link">
                     <img src="{{ asset('storage/images/logo.svg') }}" alt="logo" class="logo">
                 </a>
                 <span class="long-line"></span>
-                <a href="/about" class="nav-link">About</a>
-                <a href="/work" class="nav-link">Work</a>
-                <a href="/contact" class="nav-link">Contact</a>
+                <a href="/articles" class="nav-link">Articles</a>
+                <a href="/projects" class="nav-link">Projects</a>
+                <span class="nav-link" @click="showModal = true">Contact</span>
                 <span class="short-line"></span>
                 <a href="https://www.linkedin.com/in/christie-hill/" class="nav-icon" target="_blank">
                     <img src="{{ asset('storage/images/linkedin-icon.svg') }}" alt="LinkedIn icon">
@@ -36,13 +37,16 @@
             </nav>
             <div id="main-content">
                 @yield('content')
-            </div>                    
-        </div>
+            </div>   
 
-        <footer>
-            <p>some footer shit</p>
-        </footer>
+            <footer>
+                <p>/end</p>
+                <span class="horizontal-line"></span>
+                <p class="colophon">Colophon</p>
+                <p>Built using <a href="https://laravel.com/" class="link" target="_blank">Laravel</a>, <a href="https://vuejs.org/" class="link" target="_blank">Vuejs</a> and plenty of coffee. Running on Linode.</p>
+                <p>I <span class="emphasis">do not track</span> your interactions with this website.</p>
+            </footer>                 
+        </div>
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
-<!-- <a href="https://www.freepik.com/free-photos-vectors/background">Background psd created by zlatko_plamenov - www.freepik.com</a> -->

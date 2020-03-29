@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use TCG\Voyager\Models\Post as Post;
+use App\Project as Project;
+use TCG\Voyager\Models\Post as Article;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,15 +16,36 @@ use TCG\Voyager\Models\Post as Post;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $featuredProject = Project::select('title', 'tools', 'slug', 'image')->where('featured', '=', 1)->first();
+    return view('welcome', compact('featuredProject'));
 });
+
+Route::get('projects', function() {
+    $projects = Project::select('title', 'tools', 'created_at', 'description', 'slug', 'image', 'url')->get();
+    return view('projects.index', compact('projects'));
+});
+
+Route::get('projects/{slug}', function($slug) {
+    $project = Project::where('slug', '=', $slug)->firstOrFail();
+    return view('projects.show', compact('project'));
+});
+
+Route::get('articles', function() {
+    $articles = Article::all();
+    return view('articles.index', compact('articles'));
+});
+
+Route::get('articles/{slug}', function($slug) {
+    $article = Article::where('slug', '=', $slug)->firstOrFail();
+    return view('articles.show', compact('article'));
+});
+
+Route::post('/message', 'FormController@message');
 
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-Route::get('posts', function() {
-    $posts = Post::all();
-    return view('posts', compact('posts'));
-});
+
+// https://devdojo.com/tutorials/working-with-voyager-on-the-front-end

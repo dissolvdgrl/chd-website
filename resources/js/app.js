@@ -1,6 +1,10 @@
+import axios from 'axios';
 import Modal from './components/Modal';
-import FeaturedProject from './components/FeaturedProject';
+import Projects from './components/Projects';
+import Project from './components/Project';
+
 window.Vue = require('vue');
+window.axios = axios;
 
 /**
  * The following block of code may be used to automatically register your
@@ -23,5 +27,8 @@ files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(
 
 const app = new Vue({
     el: '#app',
-    components: { Modal, FeaturedProject }
+    components: { Modal, Projects, Project },
+    data: {
+        showModal: false
+    }
 });
