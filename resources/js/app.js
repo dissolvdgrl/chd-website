@@ -29,6 +29,20 @@ const app = new Vue({
     el: '#app',
     components: { Modal, Projects, Project },
     data: {
-        showModal: false
+        showModal: false,
+        darkMode: false
+    },
+
+    methods: {
+        toggleDarkMode(event) {
+            if (event.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'night');
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', 'day');
+            }  
+            //toggleSwitch.addEventListener('change', switchTheme, false);
+            // https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
+        }
     }
 });

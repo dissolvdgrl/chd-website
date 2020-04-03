@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+[data-theme=day] {
+  --bg-img: url(/images/bg.jpg?d67f5a48175e30c4130147752e753548) no-repeat top center;
+}
+
+[data-theme=night] {
+  --bg-img: url(/images/bg_i.jpg?f07ad5aa02dd116c263da7d2ec9557b0) no-repeat top center;
+}
+
 /* Box sizing rules */
 
 *,
@@ -84,7 +92,7 @@ button {
 }
 
 html {
-  background: url(/images/bg.jpg?d67f5a48175e30c4130147752e753548) no-repeat top center;
+  background: var(--bg-img);
   background-size: 100%;
   font-size: 16px;
   font-family: Hack, monospace;
@@ -130,6 +138,19 @@ p {
   width: 100%;
   flex-wrap: wrap;
   padding: 4rem 0;
+}
+
+#top-thing {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#top-thing span {
+  width: 80px;
+  height: 80px;
+  border-radius: 0%;
+  box-shadow: 10px 10px 0 0 red;
 }
 
 #main-content {
@@ -367,7 +388,6 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex: 1;
   margin-left: 30%;
   max-width: 960px;
 }

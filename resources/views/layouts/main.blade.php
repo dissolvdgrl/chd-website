@@ -36,6 +36,9 @@
                 </a>            
             </nav>
             <div id="main-content">
+                <div id="top-thing">
+                    <span @click="toggleDarkMode">dark mode</span>
+                </div>
                 @yield('content')
             </div>   
 

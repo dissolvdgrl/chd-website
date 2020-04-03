@@ -8,6 +8,12 @@ $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 
-// Dark Mode
+// Day mode
+[data-theme="day"] {
+    --bg-img: url('storage/images/bg.jpg') no-repeat top center;
+}
 
-// Light Mode
+// Night mode
+[data-theme="night"] {
+    --bg-img: url('storage/images/bg_i.jpg') no-repeat top center;
+}
