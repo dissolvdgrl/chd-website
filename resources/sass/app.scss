@@ -23,6 +23,7 @@
             scroll-behavior: smooth;
             text-rendering: optimizeSpeed;
             line-height: 1.5;
+            color: var(--font-color);
         }
 
         /* Remove list styles on ul, ol elements with a class attribute */
@@ -112,13 +113,6 @@
             width: 100%;
             display: flex;
             justify-content: flex-end;
-
-            span {
-                width: 80px;
-                height: 80px;
-                border-radius: 0%;
-                box-shadow: 10px 10px 0 0 red;
-              }
         }
 
         #main-content {
@@ -149,9 +143,9 @@
         .button {
             display: inline-block;
             padding: 0.5rem;
-            background-color: black;
+            background-color: var(--bg-color);
             font-size: 14px;
-            color: white;
+            color: var(--link-color);
             text-decoration: none;
             cursor: pointer;
         }
@@ -172,9 +166,9 @@
         }
 
         .link {
-            color: black;
+            color: var(--font-color);
             transition: 0.2s ease all;
-            text-decoration: solid underline black 2px;
+            text-decoration: var(--link-underline);
             text-underline-position: under;
         }
 
@@ -212,11 +206,13 @@
 
             .logo-link {
                 width: 107px;
+                height: 107px;
+                background: var(--logo);
             }
 
             .long-line {
                 display: block;
-                background-color: black;
+                background-color: var(--bg-color);
                 width: 1px;
                 height: 120px;
                 margin: 10px 0;
@@ -224,7 +220,7 @@
 
             .short-line {
                 display: block;
-                background-color: black;
+                background-color: var(--bg-color);
                 width: 1px;
                 height: 46px;
                 margin: 10px 0;
@@ -232,7 +228,7 @@
 
             .nav-link {
                 text-transform: uppercase;
-                color: black;
+                color: var(--font-color);
                 text-decoration: none;
                 letter-spacing: 0rem;
                 transition: 0.2s ease all;
@@ -302,7 +298,7 @@
         }
         
         .black {
-            background-color: black;
+            background-color: var(--bg-color);
         }
 
         .project-info {
@@ -344,9 +340,9 @@
 
         .article-body {
             a {
-                color: black;
+                color: var(--font-color);
                 transition: 0.2s ease all;
-                text-decoration: solid underline black 2px;
+                text-decoration: var(--link-underline);
                 text-underline-position: under;
             }
     
@@ -360,7 +356,7 @@
             display: block;
             width: 100%;
             height: 1px;
-            background-color: black;
+            background-color:  var(--bg-color);
         }
 
         footer {

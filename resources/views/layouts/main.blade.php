@@ -17,9 +17,7 @@
         <div id="app">
             <modal v-if="showModal" @close="showModal = false"></modal>
             <nav>
-                <a href="/" class="logo-link">
-                    <img src="{{ asset('storage/images/logo.svg') }}" alt="logo" class="logo">
-                </a>
+                <a href="/" class="logo-link"></a>
                 <span class="long-line"></span>
                 <a href="/articles" class="nav-link">Articles</a>
                 <a href="/projects" class="nav-link">Projects</a>

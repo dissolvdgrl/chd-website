@@ -2140,13 +2140,12 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(/*! ../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "[data-theme=day] {\n  --bg-img: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module './storage/images/bg.jpg'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") no-repeat top center;\n}\n[data-theme=night] {\n  --bg-img: url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module './storage/images/bg_i.jpg'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") no-repeat top center;\n}\n.modal-mask {\n  position: absolute;\n  z-index: 9998;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, 0.6);\n  display: table;\n  transition: opacity 0.3s ease;\n}\n.modal-wrapper {\n  display: table-cell;\n  vertical-align: middle;\n}\n.modal-container {\n  width: 50vw;\n  margin: 0px auto;\n  padding: 20px 30px;\n  background-color: #fff;\n  border-radius: 2px;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);\n  transition: all 0.3s ease;\n}\n.modal-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-start;\n}\n.modal-header h3 {\n  margin-top: 0;\n  color: #42b983;\n}\n.modal-body {\n  margin: 20px 0;\n}\n.modal-body form {\n  display: flex;\n  flex-direction: column;\n}\n.modal-body form label {\n  margin-top: 0.5rem;\n  margin-bottom: 3rem;\n  display: flex;\n  font-family: urw-din, sans-serif;\n}\n.modal-body form .required {\n  font-style: italic;\n  font-weight: bold;\n  font-size: 0.6rem;\n  margin-left: 0.5rem;\n}\n.modal-body form .error {\n  margin-left: auto;\n  color: red;\n  font-style: italic;\n  font-weight: bold;\n}\n.modal-body form #submit-btn:disabled {\n  background-color: #eeeeee;\n  cursor: not-allowed;\n}\n.modal-body form .submit-container {\n  font-weight: bold;\n}\n.modal-default-button {\n  float: right;\n}\n\n/*\n* The following styles are auto-applied to elements with\n* transition=\"modal\" when their visibility is toggled\n* by Vue.js.\n*\n* You can easily play with the modal transition by editing\n* these styles.\n*/\n.modal-enter {\n  opacity: 0;\n}\n.modal-leave-active {\n  opacity: 0;\n}\n.modal-enter .modal-container,\n.modal-leave-active .modal-container {\n  transform: scale(1.1);\n}", ""]);
+exports.push([module.i, ":root {\n  --bg-img: url(\"/storage/images/bg.jpg\") no-repeat top center;\n  --font-color: black;\n  --link-color: white;\n  --bg-color: black;\n  --link-underline: solid underline black 2px;\n  --logo: url(\"/storage/images/logo.svg\") no-repeat top center;\n}\n[data-theme=day] {\n  --bg-img: url(\"/storage/images/bg.jpg\") no-repeat top center;\n  --font-color: black;\n  --link-color: white;\n  --bg-color: black;\n  --link-underline: solid underline black 2px;\n}\n[data-theme=night] {\n  --bg-img: url(\"/storage/images/bg_i.jpg\") no-repeat top center;\n  --font-color: white;\n  --link-color: black;\n  --bg-color: white;\n  --link-underline: solid underline white 2px;\n  --logo: url(\"/storage/images/logo_white.svg\") no-repeat top center;\n}\n.modal-mask {\n  position: absolute;\n  z-index: 9998;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, 0.6);\n  display: table;\n  transition: opacity 0.3s ease;\n}\n.modal-wrapper {\n  display: table-cell;\n  vertical-align: middle;\n}\n.modal-container {\n  width: 50vw;\n  margin: 0px auto;\n  padding: 20px 30px;\n  background-color: #fff;\n  border-radius: 2px;\n  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);\n  transition: all 0.3s ease;\n}\n.modal-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-start;\n}\n.modal-header h3 {\n  margin-top: 0;\n  color: #42b983;\n}\n.modal-body {\n  margin: 20px 0;\n}\n.modal-body form {\n  display: flex;\n  flex-direction: column;\n}\n.modal-body form label {\n  margin-top: 0.5rem;\n  margin-bottom: 3rem;\n  display: flex;\n  font-family: urw-din, sans-serif;\n}\n.modal-body form .required {\n  font-style: italic;\n  font-weight: bold;\n  font-size: 0.6rem;\n  margin-left: 0.5rem;\n}\n.modal-body form .error {\n  margin-left: auto;\n  color: red;\n  font-style: italic;\n  font-weight: bold;\n}\n.modal-body form #submit-btn:disabled {\n  background-color: #eeeeee;\n  cursor: not-allowed;\n}\n.modal-body form .submit-container {\n  font-weight: bold;\n}\n.modal-default-button {\n  float: right;\n}\n\n/*\n* The following styles are auto-applied to elements with\n* transition=\"modal\" when their visibility is toggled\n* by Vue.js.\n*\n* You can easily play with the modal transition by editing\n* these styles.\n*/\n.modal-enter {\n  opacity: 0;\n}\n.modal-leave-active {\n  opacity: 0;\n}\n.modal-enter .modal-container,\n.modal-leave-active .modal-container {\n  transform: scale(1.1);\n}", ""]);
 
 // exports
 
@@ -2235,33 +2234,6 @@ function toComment(sourceMap) {
 	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
 
 	return '/*# ' + data + ' */';
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/lib/url/escape.js":
-/*!***************************************************!*\
-  !*** ./node_modules/css-loader/lib/url/escape.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function escape(url) {
-    if (typeof url !== 'string') {
-        return url
-    }
-    // If url is already wrapped in quotes, remove them
-    if (/^['"].*['"]$/.test(url)) {
-        url = url.slice(1, -1);
-    }
-    // Should url be wrapped?
-    // See https://drafts.csswg.org/css-values-3/#urls
-    if (/["'() \t\n]/.test(url)) {
-        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
-    }
-
-    return url
 }
 
 
@@ -15906,17 +15878,30 @@ var app = new Vue({
   },
   data: {
     showModal: false,
-    darkMode: false
+    darkMode: localStorage.getItem('theme')
+  },
+  mounted: function mounted() {
+    if (localStorage.darkMode) {
+      this.darkMode = localStorage.darkMode;
+    }
+  },
+  watch: {
+    darkMode: function darkMode(currentTheme) {
+      //https://vuejs.org/v2/cookbook/client-side-storage.html
+      localStorage.darkMode = currentTheme;
+    }
   },
   methods: {
-    toggleDarkMode: function toggleDarkMode(event) {
-      if (event.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'night');
+    toggleDarkMode: function toggleDarkMode() {
+      if (this.darkMode == 'day') {
+        this.darkMode = 'night';
+        console.log(this.darkMode); //document.documentElement.setAttribute('data-theme', 'night');
       } else {
-        document.documentElement.setAttribute('data-theme', 'day');
-      } //toggleSwitch.addEventListener('change', switchTheme, false);
-      // https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
+        this.darkMode = 'day';
+        console.log(this.darkMode); //document.documentElement.setAttribute('data-theme', 'day');
+      }
 
+      console.log(this.darkMode); // https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
     }
   }
 });

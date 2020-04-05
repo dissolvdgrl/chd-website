@@ -1,6 +1,15 @@
 // Body
 $body-bg: #f8fafc;
 
+:root {
+   --bg-img: url('/storage/images/bg.jpg') no-repeat top center;
+   --font-color: black;
+   --link-color: white;
+   --bg-color: black;
+   --link-underline: solid underline black 2px;
+   --logo: url('/storage/images/logo.svg') no-repeat top center;
+}
+
 // Typography
 $body: Hack, monospace;
 $headings: urw-din, sans-serif; // weight 700
@@ -10,10 +19,19 @@ $line-height-base: 1.6;
 
 // Day mode
 [data-theme="day"] {
-    --bg-img: url('storage/images/bg.jpg') no-repeat top center;
+    --bg-img: url('/storage/images/bg.jpg') no-repeat top center;
+    --font-color: black;
+    --link-color: white;
+    --bg-color: black;
+    --link-underline: solid underline black 2px;
 }
 
 // Night mode
 [data-theme="night"] {
-    --bg-img: url('storage/images/bg_i.jpg') no-repeat top center;
+    --bg-img: url('/storage/images/bg_i.jpg') no-repeat top center;
+    --font-color: white;
+    --link-color: black;
+    --bg-color: white;
+    --link-underline: solid underline white 2px;
+    --logo: url('/storage/images/logo_white.svg') no-repeat top center;
 }

@@ -30,18 +30,35 @@ const app = new Vue({
     components: { Modal, Projects, Project },
     data: {
         showModal: false,
-        darkMode: false
+        darkMode: localStorage.getItem('theme')
+    },
+
+    mounted() {
+        if(localStorage.darkMode) {
+            this.darkMode = localStorage.darkMode;
+        }
+    },
+
+    watch: {
+        darkMode(currentTheme) {
+            //https://vuejs.org/v2/cookbook/client-side-storage.html
+            localStorage.darkMode = currentTheme;
+        }
     },
 
     methods: {
-        toggleDarkMode(event) {
-            if (event.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'night');
+        toggleDarkMode() {                
+            if(this.darkMode == 'day') {
+                this.darkMode = 'night';
+                console.log(this.darkMode);
+                //document.documentElement.setAttribute('data-theme', 'night');
+            } else {
+                this.darkMode = 'day';
+                console.log(this.darkMode);
+                //document.documentElement.setAttribute('data-theme', 'day');
             }
-            else {
-                document.documentElement.setAttribute('data-theme', 'day');
-            }  
-            //toggleSwitch.addEventListener('change', switchTheme, false);
+
+            console.log(this.darkMode);
             // https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
         }
     }
