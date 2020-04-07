@@ -31,7 +31,7 @@ Route::get('projects/{slug}', function($slug) {
 });
 
 Route::get('articles', function() {
-    $articles = Article::all();
+    $articles = Article::orderBy('created_at', 'desc')->get();
     return view('articles.index', compact('articles'));
 });
 
