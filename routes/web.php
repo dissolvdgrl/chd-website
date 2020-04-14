@@ -31,12 +31,12 @@ Route::get('projects/{slug}', function($slug) {
 });
 
 Route::get('articles', function() {
-    $articles = Article::orderBy('created_at', 'desc')->get();
+    $articles = Article::orderBy('created_at', 'desc')->where('status', '=', 'PUBLISHED')->get();
     return view('articles.index', compact('articles'));
 });
 
 Route::get('articles/{slug}', function($slug) {
-    $article = Article::where('slug', '=', $slug)->firstOrFail();
+    $article = Article::where('slug', '=', $slug)->orWhere('status', '=', 'PUBLISHED')->firstOrFail();
     return view('articles.show', compact('article'));
 });
 
