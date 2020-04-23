@@ -36,7 +36,7 @@ Route::get('articles', function() {
 });
 
 Route::get('articles/{slug}', function($slug) {
-    $article = Article::where('slug', '=', $slug)->orWhere('status', '=', 'PUBLISHED')->firstOrFail();
+    $article = Article::where('slug', '=', $slug)->orWhere('status', '=', 'PUBLISHED')->findOrFail($slug);
     return view('articles.show', compact('article'));
 });
 
